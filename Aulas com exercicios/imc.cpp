@@ -19,7 +19,7 @@ MENU: //Ponto de repetição
     system("clear");
     cout << "\n*** Menu de Controle ***";
     cout << "\n1 Digite o nome, o peso e a altura...";
-    cout << "\n2 Clacular o IMC...";
+    cout << "\n2 Calcular o IMC...";
     cout << "\n3 Exibir os resultados...";
     cout << "\n4 Finalizar o programa...";
     cout << "\n5 Intem:";

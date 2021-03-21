@@ -23,3 +23,6 @@ else if
 else 
 */
 
+
+/*No linux cls no Windows clear*/
+

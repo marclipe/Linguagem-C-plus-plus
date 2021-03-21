@@ -5,55 +5,69 @@
 #include <iomanip>
 using namespace std;
 
-
-int NumLados;
-float MedLado;
-string status;
+int NumLados, area;
+double MedLado;
 
 int main(void)
 {
-    int item;
     setlocale(LC_ALL, "Portuguese");
+    /*system("cls");*/
 
-    /*system("cls");*/ 
+    cout << "\n*** MENU DO PROGRAMA ***\n";
+    cout << "\n1 Digite número de lados ";
+    cout << "\n2 Informar o tipo do polígono";
+    cout << "\n3 Calcular a área ";
+    cout << "\n4 Finalizar o programa\n";
 
-    if (item == 1)
+    cout << "\nDigite o número de lados: ";
+    cin >> NumLados;
+
+    if (NumLados == 3)
     {
-        cout << "Digite o número de lados do polígono";
-        cin >> NumLados;
-
-        cout << "Digite medida do lado";
-        cin >> MedLado;
+        /*Teorema de HERON*/
+        cout << "\nTRIÂNGULO\n";
+        int t1, t2, t3, p;
+        cout << "\nDigite o primeiro lado: ";
+        cin >> t1;
+        cout << "\nDigite o segundo lado: ";
+        cin >> t2;
+        cout << "\nDigite o terceiro lado: ";
+        cin >> t3;
+        /*Perimetro*/
+        p = t1 + t2 + t3 / 2;
+        MedLado = sqrt(p * (p - t1) * (p - t2) * (p - t3));
+        cout << "\nA área do TRIÂNGULO é : " << MedLado << endl; 
+    }
+    else if (NumLados == 4)
+    {
+        cout << "\nQUADRADO\n";
+        int b, h;
+        cout << "\nDigite a base: ";
+        cin >> b;
+        cout << "\nDigite a altura: ";
+        cin >> h;
+        MedLado = b * h;
+        cout << "\nA área do QUADRADO é : " << MedLado << endl;
+    }
+    else if (NumLados == 5)
+    {
+        double p, ap;
+        cout << "\nPENTAGONO\n";
+        cout << "\nDigite o semiperimetro: ";
+        cin >> p;
+        cout << "\nDigite a apótema: ";
+        cin >> ap; 
+        MedLado = p * ap;
+        cout << "\nA área do PENTAGONO é: " << MedLado << endl;
+    }
+    else if (NumLados < 3)
+    {
+        cout << "\nNÃO É UM POLÍGONO";
+    }
+    else if (NumLados > 5)
+    {
+        cout << "\nPOLÍGONO NÃO IDENTIFICADO";
     }
 
-    else if (item == 2)
-    {
-        if (NumLados == 3)
-        {
-            status = "TIÂNGULO";
-            /*Teorema de HERON*/
-        }
-        else if (NumLados == 4)
-        {
-            status = "QUADRADO";
-            /**/
-        }
-        else
-        {
-            status = "PENTÁGONO";
-            /*calculo cácule área do pentago*/
-        }
-    }
-    else
-    {
-        if ( NumLados < 3 )
-        {
-
-            status = "NÃO É UM POLÍGONO";
-        }
-        else if ( NumLados > 5)
-        {
-            status = "POLÍGONO NÃO IDENTIFICADO"; 
-        }
-    }
+    return 0;
 }
