@@ -27,7 +27,7 @@ MENU: //Ponto de repetição
 
     if (item == 1)
     {
-        system("cls");
+        system("clear"); /*No linux cls no Windows clear*/
         cout << "\n Digite o nome: ";
         cin >> nome;
         cin.ignore();       //ignora o enter do cin anterior para usar getline
@@ -63,7 +63,7 @@ MENU: //Ponto de repetição
 
     else if (item == 3)
     {
-        system("cls");
+        system("clear");
         cout << "\n *** Tela de Saída ***";
         cout << "\n Nome: " << nome;
         cout << "\nIMC.." << imc;
