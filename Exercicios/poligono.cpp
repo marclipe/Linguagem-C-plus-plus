@@ -5,7 +5,9 @@
 #include <iomanip>
 using namespace std;
 
-double NumLados, MedLado;
+
+int NumLados;
+float MedLado;
 string status;
 
 int main(void)
@@ -13,7 +15,7 @@ int main(void)
     int item;
     setlocale(LC_ALL, "Portuguese");
 
-    system("cls"); 
+    /*system("cls");*/ 
 
     if (item == 1)
     {
