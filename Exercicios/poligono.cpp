@@ -11,7 +11,7 @@ double MedLado;
 int main(void)
 {
     setlocale(LC_ALL, "Portuguese");
-    /*system("cls");*/
+    system("clear");
 
     cout << "\n*** MENU DO PROGRAMA ***\n";
     cout << "\n1 Digite número de lados ";
