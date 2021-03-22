@@ -22,20 +22,17 @@ int main(void)
 
     if (n1 > n2 && n1 > n3)
     {
-        cout << "\nO Maior valor é : " << maior;
-        maior = n1; 
+        cout << "\nO Maior valor é : " << n1;
     }
     else if (n2 > n1 && n2 > n3)
     {
         cout << "\nO Maior valor é : " << n2;
-        maior = n2; 
     }
     else if (n3 > n1 && n3 > n2)
     {
         cout << "\nO Maior valor : " << n3;
-        maior = n3; 
     }
-    else if (n1 == n2 == n3)
+    else if (n1 == n2 && n1 == n3 && n2 == n3)
     {
         cout << "\nNúmeros iguais não são válidos!";
     }
@@ -43,10 +40,10 @@ int main(void)
     {
         cout << "\nO valor é NULO!";
     }
-    else if (0 > n1,  0 > n2,  0 > n3)
+    else if (0 > n1 || 0 > n2 || 0 > n3)
     {
         cout << "\nNão aceitamos valores negativos!";
     }
 
-    return 0; 
+    return 0;
 }
