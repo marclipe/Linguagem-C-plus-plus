@@ -9,7 +9,7 @@ int main(void)
 {
     setlocale(LC_ALL, "Portuguese");
     cout << "\nLer 3 valores inteiros e escrever o maior deles";
-    /*system("clear");*/
+    system("clear");
 
     cout << "\nDigite o primeiro valor: ";
     cin >> n1;
@@ -31,6 +31,7 @@ int main(void)
     else if (n3 > n1 && n3 > n2)
     {
         cout << "\nO Maior valor : " << n3;
+
     }
     else if (n1 == n2 && n1 == n3 && n2 == n3)
     {

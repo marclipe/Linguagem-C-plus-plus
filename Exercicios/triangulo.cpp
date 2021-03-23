@@ -9,13 +9,13 @@ int main()
 
     int L1, L2, L3;
 
-    cout << "\nDigite o primeiro laod do triângulo: ";
+    cout << "\nDigite o primeiro lado do triângulo: \n";
     cin >> L1;
 
-    cout << "\nDigite o segundo lado do triângulo: ";
+    cout << "\nDigite o segundo lado do triângulo: \n";
     cin >> L2;
 
-    cout << "\nDigite o terceiro lado do triângulo: ";
+    cout << "\nDigite o terceiro lado do triângulo: \n";
     cin >> L3;
 
     if (L1 >= (L2 + L3) && L2 >= (L1 + L2) && L3 >= (L2 + L1))
@@ -34,4 +34,6 @@ int main()
     {
         cout << "TRIÂNGULO ISÓSCELES";
     }
+
+    return 0;
 }
