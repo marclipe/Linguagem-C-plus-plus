@@ -35,7 +35,7 @@ int main() {
     break;   
   }
 
-  system("pause");
+  //system("pause");
 
   goto Menu; 
 
