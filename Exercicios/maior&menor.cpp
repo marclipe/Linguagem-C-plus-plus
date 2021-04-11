@@ -3,13 +3,13 @@
 #include <string.h>
 using namespace std;
 
-int n1, n2, n3, n4, n5, maior, menor, num, cont;
+int n1, n2, n3, n4, n5, maior, menor, num;
 
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    int tecla;
+    int tecla, cont;
 MENU:
     system("cls");
     cout << "\n1 Executar...";
@@ -22,23 +22,23 @@ MENU:
     case 1:
         system("cls");
         cout << "Digite 5 numeros:  ";
-        cin >> n1, n2, n3, n4 , n5;
+        cin >> num;  
 
-        maior == num;
-        menor == num;
-        cont == cont + 1;  
+        if (cont = 1)
+        {
+            maior == num; 
+            menor == num; 
+        }
+        else if (num > maior)
+        {
+            maior == num;
+        }else if (num < menor)
+        {
+            menor == num; 
+        }
 
-        if (n1, n2, n3, n4 , n5 > maior)
-        {
-            maior = num; 
-            cout << "Maior número\n" << num; 
-        }
-        else if (n1, n2, n3, n4 , n5 < menor)
-        {
-            menor == num;
-            cout << "Menor numero!\n" << num;
-        }
-        cont == cont + 1;
+        cont = cont + 1;
+        cout << "\nO numero maior é " << maior <<" e o numero menor é "<< menor; 
         break;
 
     case 2:
