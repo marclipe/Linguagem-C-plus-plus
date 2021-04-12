@@ -9,7 +9,7 @@ int main ()
 {
   setlocale(LC_ALL, "Portuguese"); 
 
-  int n1, n2, n3, n4;
+  int n1, n2, n3;
 
   system("clear"); 
   cout << "Digite o primeiro número: ";
@@ -31,6 +31,5 @@ int main ()
     }
 
   cout << n1 << n2 <<  n3;   
-   
-  return 0; 
+    
 }
