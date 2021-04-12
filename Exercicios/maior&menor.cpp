@@ -11,7 +11,7 @@ int main()
 
     int tecla, cont;
 MENU:
-    system("cls");
+    system("clear");
     cout << "\n1 Executar...";
     cout << "\n2 Finalizar...";
     cout << "\n3 Item";
@@ -20,25 +20,54 @@ MENU:
     switch (tecla)
     {
     case 1:
-        system("cls");
+        system("clear");
         cout << "Digite 5 numeros:  ";
-        cin >> num;  
+        cin >> n1 >> n2 >> n3 >> n4 >> n5;
 
-        if (cont = 1)
+        if (n1 > n2 && n1 > n3 && n1 > n4 && n1 > n5) //n1
         {
-            maior == num; 
-            menor == num; 
+            maior = n1;
         }
-        else if (num > maior)
-        {
-            maior == num;
-        }else if (num < menor)
-        {
-            menor == num; 
+        else if (n1 < n2 && n1 < n3 && n1 < n4 && n1 < n5)
+        { //n1
+            menor = n1;
+        }
+        else if (n2 > n1 && n2 > n3 && n2 > n4 && n2 > n5)
+        { //n2
+            maior = n2;
+        }
+        else if (n2 < n1 && n2 < n3 && n2 < n4 && n2 < n5)
+        { //n2
+            menor = n2;
+        }
+        else if (n3 > n1 && n3 > n2 && n3 > n4 && n3 > n5)
+        { //n3
+            maior = n3;
+        }
+        else if (n3 < n1 && n3 < n2 && n3 < n4 && n2 < n5)
+        { //n3
+            menor = n3;
+        }
+        else if (n4 > n1 && n4 > n2 && n4 > n3 && n4 > n5)
+        { //n4
+            maior = n4;
+        }
+        else if (n4 < n1 && n4 < n2 && n4 < n3 && n2 < n5)
+        { //n4
+            menor = n4;
+        }
+        else if (n5 > n1 && n5 > n2 && n5 > n3 && n5 > n4)
+        { //n5
+            maior = n5;
+        }
+        else if (n5 < n1 && n5 < n2 && n5 < n3 && n5 < n4)
+        { //n5
+            menor = n5;
         }
 
-        cont = cont + 1;
-        cout << "\nO numero maior é " << maior <<" e o numero menor é "<< menor; 
+        cout << maior;
+        cout << menor;
+
         break;
 
     case 2:
@@ -46,7 +75,6 @@ MENU:
         exit(0);
         break;
     }
-    system("pause");
 
     goto MENU;
 
