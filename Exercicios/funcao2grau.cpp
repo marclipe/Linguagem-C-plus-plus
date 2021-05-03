@@ -9,8 +9,6 @@ double lerA(){
     double A; 
     cout << "Digite A: "; 
     cin >> A;  
-
-    
     return A; 
 }
 
@@ -34,7 +32,6 @@ double lerC(){
 double calcDelta( double A, double B, double C ){
     double Delta; 
     Delta = B*B*4*A*C;
-    
     return Delta;    
 }
 
@@ -78,9 +75,11 @@ int main()
     
     A = lerA();                 //executa lern1()
     B = lerB();   
-    C = lerC();              // executa lern2()
+    C = lerC();              // executa lerC()
     Delta = calcDelta(A, B, C); //executa Delta
 
+    X1 = lerX1(Delta, A, B);
+    X2 = lerX2(Delta, A, B);
 
     exibir( Delta, X1, X2); //executa void mostrar
     return 0;                    //fim do programa
