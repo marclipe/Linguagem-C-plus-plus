@@ -1,0 +1,22 @@
+VARIÁVEL: trata-se de um espaço de memória quer sofrerá alteração durante a execução de um programa 
+
+CONSTANTE: trata-se de um espaço na memória que não sofrerá alteração durante a execução de um programa, o programa terá acesso. 
+
+- Tanto Variável como constante são criadas para armazenar valores na memória RAM do computador dependem do tipo: INT, BOL, DOUBLE, FLOAT, STRING , chamar
+
+- VARIÁVEIS LOCAIS: são criadas dentro de funções ou voids. N
+
+- VARIÁVEIS GLOBAIS: são criadas fora de funções ou voids ocupam mais memória pois permanecem mais tempo ocupando memória. 
+
+- ESCOPO: É a área de alcance de uma variável podendo ser global ou local. 
+
+
+Exemplo: Cálculo da média ponderada com processos
+pes1 = 0.35 
+pes2 = 0.65 
+nota1 = ? 
+nota2 = ? 
+media P = nota1 * pes1 + nota2 * pes2; 
+Se media P > 6 "Aluno Aprovado" senão "Aluno Reprovado!" 
+
+

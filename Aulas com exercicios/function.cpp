@@ -1,11 +1,12 @@
 #include "iostream"
 #include "cstdlib"
+#include "string"
 using namespace std;
 
 double lern1()
 {
     double n1; //variável de saída
-    cout << "Digite  n1";
+    cout << "Digite  n1: ";
     cin >> n1;
     return n1;
 }
@@ -13,7 +14,7 @@ double lern1()
 double lern2()
 {
     double n2;
-    cout << "Digite n2";
+    cout << "Digite n2: ";
     cin >> n2;
     return n2;
 }
@@ -25,10 +26,13 @@ double calcMedia(double n1, double n2) //variáveis de entrada
     return media; //return só usado dentro de funções
 }
 
-void mostrar(double media) //mostrar o resultado
+void mostrar(double media, int idade, string nome) //mostrar o resultado
 {
-    cout << "\nMedia:" << media << endl;
-    system("sleep 5");
+
+    cout << "\nNome: " << nome << endl;
+    cout << "\nIdade: " << idade << endl;
+    cout << "\nMedia: " << media << endl;
+    system("pause 5"); //*sleep - linux *pause - windows
 }
 
 int lerIdade()
@@ -45,17 +49,23 @@ string lerNome()
     cout << "\nDigite o nome:";
     cin.ignore(); //ignora o enter do cin anterior
     getline(cin, nome);
+    return nome;
 }
 
 int main()
-{
-    double nota1, nota2, media;      //variáveis para funções
-    int imprimir;                    //variável para a função mostrar
+{                               //criar variáveis para chamar as funções
+    double nota1, nota2, media; //variáveis para as funções
+    int idade;
+    string nome;
+
     nota1 = lern1();                 //executa lern1()
     nota2 = lern2();                 // executa lern2()
     media = calcMedia(nota1, nota2); //executa calcMedia
-    mostrar(media);                  //executa void mostrar
-    return 0;                        //fim do programa
-}
 
-//parei 22:55 
+    idade = lerIdade();
+    nome = lerNome();
+
+    mostrar(media, idade, nome); //executa void mostrar
+    return 0;                    //fim do programa
+}
+//parei 29:00
