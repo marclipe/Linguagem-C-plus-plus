@@ -1,7 +1,6 @@
 #include "iostream"
 #include "cstdlib"
 #include "math.h"
-#include "string"
 using namespace std;
 
 //Ler A
