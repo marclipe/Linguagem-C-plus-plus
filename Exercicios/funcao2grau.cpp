@@ -59,7 +59,7 @@ void exibir(double Delta, double X1, double X2)//mostrar o resultado
 
 int main()
 {                               //criar variáveis para chamar as funções
-    double A, B, C, Delta, X1, X2; //variáveis para as funções
+    double A, B, C, Delta, X1, X2; 
 
     if(Delta < 0){
         cout << "Delta não poderá ser negativo!"; 
@@ -72,8 +72,8 @@ int main()
         double lerDelta(); 
     }
     
-    A = lerA();                 //executa lern1()
-    B = lerB();   
+    A = lerA();                 //executa lerA()
+    B = lerB();         //executa lerB()
     C = lerC();              // executa lerC()
     Delta = calcDelta(A, B, C); //executa Delta
 
