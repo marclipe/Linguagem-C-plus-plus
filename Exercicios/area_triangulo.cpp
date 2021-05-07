@@ -37,7 +37,7 @@ void exibir(double base, double altura, double area)
 
 int main()
 {
-    double base, altura, area;
+    double base, altura, area, saldo = 0;
     int tecla = 0;
     while (tecla != 4)
     {
