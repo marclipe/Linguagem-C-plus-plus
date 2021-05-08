@@ -45,7 +45,7 @@ double getMedia(double saldo, double cont)
 
 void mostrar(string cliente, int cont, double saldo, double media)
 {
-    system("clear");
+    system("cls");
     cout << "\nResultados..";
     cout << "\nCliente: " << cliente;
     cout << "\nContagem: " << cont;
@@ -66,7 +66,7 @@ void menu_controle()
 
     while (true)
     { //while infinito
-        system("clear");
+        system("cls");
         cout << "\n**** Menu de Controle****";
         cout << "\n1Ler valores e processar...";
         cout << "\n2Exibir resultados...";

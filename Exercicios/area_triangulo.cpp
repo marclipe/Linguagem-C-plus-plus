@@ -28,25 +28,27 @@ double calcarea(double base, double altura)
 
 void exibir(double base, double altura, double area)
 {
-    system("clear");
+    system("cls");
     cout << "\nBase.." << base;
     cout << "\nAltura.." << altura;
     cout << "\nArea.." << area;
     system("pause 5");
 }
 
-int main()
-{
-    double base, altura, area, saldo = 0;
-    int tecla = 0, cont = 1, saldoarea;
+int main(){
+    int cont = 1; 
+    double saldoArea = 0, valor = 0; 
+
+    double base, altura, area;
+    int tecla = 0;
     while (tecla != 4)
     {
-        system("clear");
+        system("cls");
         cout << "\n1 Ler..";
         cout << "\n2 Calcular...";
         cout << "\nExibir...";
         cout << "\nSair\nItem";
-    }
+        cin >> tecla; 
 
     if (tecla == 1)
     {
@@ -55,21 +57,20 @@ int main()
     }
     else if (tecla == 2)
     {
+
         area = calcarea(base, altura);
-        while (area)
-        {
-            saldoarea = cont + 1; 
-        }
+        area =+1; 
+        saldoArea += valor; 
         cout << "\nCálculo bem sucedido!";
         system("pause");
     }
     else if (tecla == 3)
     {
         exibir(base, altura, area);
-    } //fim while
+    } 
 
-    cout << "\nPrograma Finalizado\n"
-         << endl;
+    cout << "\nPrograma Finalizado\n";  
     system("pause");
     return 0;
+    } //fim while
 }
