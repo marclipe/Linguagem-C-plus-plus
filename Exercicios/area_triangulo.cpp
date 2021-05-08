@@ -26,28 +26,29 @@ double calcarea(double base, double altura)
     return area;
 }
 
-void exibir(double base, double altura, double area)
+void exibir(double base, double altura, double area, double mediaArea)
 {
     system("cls");
     cout << "\nBase.." << base;
     cout << "\nAltura.." << altura;
     cout << "\nArea.." << area;
-    system("pause 5");
+    cout << "\nMedia area.." << mediaArea; 
+    system("pause");
 }
 
 int main(){
     int cont = 1; 
-    double saldoArea = 0, valor = 0; 
+    double saldoArea = 0, valor = 0, mediaArea; 
 
     double base, altura, area;
     int tecla = 0;
     while (tecla != 4)
     {
-        system("cls");
+        system("clear");
         cout << "\n1 Ler..";
         cout << "\n2 Calcular...";
-        cout << "\nExibir...";
-        cout << "\nSair\nItem";
+        cout << "\n3 Exibir...";
+        cout << "\n4 Sair\nItem";
         cin >> tecla; 
 
     if (tecla == 1)
@@ -59,14 +60,15 @@ int main(){
     {
 
         area = calcarea(base, altura);
-        area =+1; 
-        saldoArea += valor; 
+        cont =+1; 
+        saldoArea += area;
         cout << "\nCálculo bem sucedido!";
         system("pause");
     }
     else if (tecla == 3)
     {
-        exibir(base, altura, area);
+        mediaArea = saldoArea/cont;
+        exibir(base, altura, area, mediaArea);
     } 
 
     cout << "\nPrograma Finalizado\n";  
