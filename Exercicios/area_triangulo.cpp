@@ -1,4 +1,4 @@
-#include <iostream> //04/05/2021
+#include <iostream> //07/05/2021 
 #include <cstdlib>
 #include <iomanip>
 using namespace std;
@@ -38,7 +38,7 @@ void exibir(double base, double altura, double area)
 int main()
 {
     double base, altura, area, saldo = 0;
-    int tecla = 0;
+    int tecla = 0, cont = 1, saldoarea;
     while (tecla != 4)
     {
         system("clear");
@@ -56,6 +56,10 @@ int main()
     else if (tecla == 2)
     {
         area = calcarea(base, altura);
+        while (area)
+        {
+            saldoarea = cont + 1; 
+        }
         cout << "\nCálculo bem sucedido!";
         system("pause");
     }
