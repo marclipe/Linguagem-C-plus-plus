@@ -42,9 +42,10 @@ int main(){
 
     double base, altura, area;
     int tecla = 0;
+    menu:
     while (tecla != 4)
     {
-        system("clear");
+        system("cls");
         cout << "\n1 Ler..";
         cout << "\n2 Calcular...";
         cout << "\n3 Exibir...";
@@ -60,17 +61,17 @@ int main(){
     {
 
         area = calcarea(base, altura);
-        cont =+1; 
-        saldoArea += area;
+        /*cont =+1; 
+        saldoArea += area;*/
         cout << "\nCálculo bem sucedido!";
-        system("pause");
+        /*system("pause");*/
     }
     else if (tecla == 3)
     {
         mediaArea = saldoArea/cont;
         exibir(base, altura, area, mediaArea);
     } 
-
+    goto menu;
     cout << "\nPrograma Finalizado\n";  
     system("pause");
     return 0;
