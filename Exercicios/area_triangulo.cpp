@@ -70,7 +70,7 @@ int main(){
     {
         mediaArea = saldoArea/cont;
         exibir(base, altura, area, mediaArea);
-    } 
+    }
     goto menu;
     cout << "\nPrograma Finalizado\n";  
     system("pause");
