@@ -49,7 +49,7 @@ int main(){
         cout << "\n1 Ler..";
         cout << "\n2 Calcular...";
         cout << "\n3 Exibir...";
-        cout << "\n4 Sair\nItem";
+        cout << "\n4 Sair\nItem\n";
         cin >> tecla; 
 
     if (tecla == 1)
@@ -61,9 +61,9 @@ int main(){
     {
 
         area = calcarea(base, altura);
-        /*cont =+1; 
-        saldoArea += area;*/
-        cout << "\nCálculo bem sucedido!";
+        cont =+1; 
+        saldoArea += area; 
+        cout << "\nCálculo bem sucedido!\n";
         /*system("pause");*/
     }
     else if (tecla == 3)
