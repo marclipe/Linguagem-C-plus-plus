@@ -8,7 +8,7 @@ using namespace std;
 double lervalor()
 {
     double valor;
-    cout << "Valor da prestação: R$ ";
+    cout << "Valor da prestação: ";
     cin >> valor;
     return valor;
 }
@@ -52,7 +52,8 @@ void exibir(double Multa, double juros, double VLPAGAR)
     system("cls");
     cout << "\nMulta: R$" << Multa;
     cout << "\nJuros: R$" << juros;
-    cout << "\nValor a Pagar: R$" << VLPAGAR;
+    cout << "\nValor a Pagar: R$" << fixed << setprecision(2) << VLPAGAR;
+    system("pause");
 }
 
 //Menu interativo
@@ -67,6 +68,7 @@ int main()
 Menu:
     while (tecla != 4)
     {
+        system("cls");
         cout << "\n1 Ler..";
         cout << "\n2 Calcular..";
         cout << "\n3 Exibir..";
