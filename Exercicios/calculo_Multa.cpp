@@ -45,9 +45,9 @@ double calcJuros(double dias)
 /*Finalmente calcule o 
 valor a pagar VLPAGAR que será a soma de VALOR + MULTA + JUROS*/
 
-int VL_PAGAR(double valor, double multa, double juros)
+double VL_PAGAR(double valor, double multa, double juros)
 {
-    int VLPAGAR;
+    double VLPAGAR;
     VLPAGAR = valor + multa + juros;
     return VLPAGAR;
 }
@@ -63,13 +63,12 @@ void exibir(double Multa, double juros, double VLPAGAR)
 
 int main()
 {
+    setlocale(LC_ALL, "Portuguese"); 
 
-    double Multa, juros;
-    int VLPAGAR;
+    double Multa, juros, VLPAGAR;
     double valor, dias;
 
     int tecla = 0;
-
 Menu:
     while (tecla != 4)
     {
@@ -77,32 +76,26 @@ Menu:
         cout << "\n1 Ler..";
         cout << "\n2 Calcular..";
         cout << "\n3 Exibir";
-        cout << "\4 Sair";
+        cout << "\n4 Sair\nItem";
 
         if (tecla == 1)
         {
-            lervalor();
-            lerQuantdias();
+            valor = lervalor();
+            dias = lerQuantdias();
         }
         else if (tecla == 2)
         {
-            calcMulta(valor);
-            calcJuros(dias);
-            VL_PAGAR(valor, Multa, juros);
+            Multa = calcMulta(valor);
+            juros = calcJuros(dias);
+            VLPAGAR = VL_PAGAR(valor, Multa, juros);
         }
         else if (tecla == 3)
         {
             exibir(Multa, juros, VLPAGAR);
         }
-        else if (tecla == 4)
-        {
-
-            exit(0);
-        }
         goto Menu;
         cout << "\nFim de Programa...";
-        system("pause");
-
-        return 0;
+        system("pause");  
     }
+    return 0;
 }
