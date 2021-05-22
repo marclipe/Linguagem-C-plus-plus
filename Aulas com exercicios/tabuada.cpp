@@ -19,17 +19,18 @@ void tabuada(int tab)
     cout << "Digite o valor da tabuada: ";
     cin >> X;
     /*for (Inicio;Fim;Passo)*/
-    for (int cont = 1; cont <= 10; cont+=1) //passo - (incremento ++ ou +=1)
+    for (int cont = 1; cont <= 10; cont += 1) //passo - (incremento ++ ou +=1)
     {
         R = X + cont;
         cout << cont << " * " << X << " = " << R << endl;
     }
-    system("pause 8"); 
+    system("pause 8");
 }
 
-void controle(){ //interação 
-    int X; 
-    cout << "Digite o valor da tabuada: "; 
+void controle()
+{ //interação
+    int X;
+    cout << "Digite o valor da tabuada: ";
     cin >> X;
-    tabuada( X );
+    tabuada(X);
 }
