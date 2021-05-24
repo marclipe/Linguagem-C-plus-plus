@@ -1,7 +1,6 @@
-#include <iostream> //23/05/2021
+#include <iostream> 
 #include <cstdlib>
 #include <math.h>
-#include <string>
 using namespace std;
 
 int get_Soma(int A, int B, int num);
@@ -15,18 +14,14 @@ int main()
 
 int get_Soma(int A, int B, int num)
 {
-    int cont = 0 , soma;
+
     //calcule e exiba o somatório de todos os números ímpares entre A e B
     for (int i = A; i <= B; i += 1)
-    { 
+    {
         if (num != 0)
         {
-            num = i ++;
-            //cout << i  << "\nSoma "  << num << endl;
-
-            soma = num + i;
-
-            cout << "\nsoma: " << soma;  
+            num = i++;
+            cout << i << endl;
         }
     }
 }
@@ -34,14 +29,30 @@ int get_Soma(int A, int B, int num)
 void controle()
 {
     int A, B, num;
+    int tecla;
 
+    while (tecla != 3)
+    {
+        cout << "\n\n***MENU ***\n";
+        cout << "\n1 Ler valores\n2 Calcular e exibir\n3 Desligar\nitem: \n";
+        cin >> tecla;
 
-    cout << "\n\n***MENU ***\n";
+        switch (tecla)
+        {
+        case 1:
+            cout << "\nDigite dois valores: ";
+            cin >> A >> B;
+            break;
 
-    cout << "\nDigite dois valores: ";
-    cin >> A >> B;
+        case 2:
+            get_Soma(A, B, num);
+            break;
+        case 3:
+            cout << "Finalizando...";
+            exit(0);
+            break;
+        }
+    }
 
     get_Soma(A, B, num);
-
-    
 }
