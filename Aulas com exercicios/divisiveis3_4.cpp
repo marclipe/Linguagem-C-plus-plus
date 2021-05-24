@@ -5,7 +5,6 @@
 using namespace std;
 
 int get_soma(int x, int y);
-
 void controle();
 
 int main()
