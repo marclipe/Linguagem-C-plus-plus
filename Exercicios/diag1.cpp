@@ -6,44 +6,26 @@ using namespace std;
 int lern()
 {
     int n;
-    cout << "Digite os valores: ";
+    cout << "Digite o valor: ";
     cin >> n;
-    return n;
-}
-
-int calpar(int n)
-{
-    int n;
-    if (n = 0)
-    cout << "\nValores pares: " << n;
-    return n;
-}
-
-int calimpar(){
-    int n;
-    cout << "\nValores impares: "; 
-    return n;
+    return n; 
 }
 
 void exibir(int n, int totpar, int totimpar)
 {
-    cout << "Número: " << n;
-    cout << "Total de pares: " << totpar;
-    cout << "Total de impares: " << totimpar;
-    system("pause 3");
+    cout << "\nNúmero: " << n;
+    cout << "\nTotal de pares: " << totpar;
+    cout << "\nTotal de impares: " << totimpar;
+    system("pause");
 }
 
 int main()
 {
-    setlocale(LC_ALL, "POrtuguese");
-    exibir();
-}
-
-void exibir()
-{
+    setlocale(LC_ALL, "Portuguese");
     int n, totpar, totimpar;
     int tecla = 0;
-
+    
+    
     while (tecla != 4)
     {
         cout << "\n1 Ler valores\n2 Calcular \n3 Exibir \n4 Sair \nitem: \n";
@@ -51,12 +33,16 @@ void exibir()
         switch (tecla)
         {
         case 1:
-            n = lern();
-            break;
-
+            n = lern(); break;
         case 2:
-            totpar = calpar(n);
-            totimpar = calimpar();
+          if (n%2 == 0)
+          {
+            cout << "Total de par: " << n;
+          }else
+          {
+            cout << "Total de Impar: " << n;
+          }  
+
             break;
         case 3:
             exibir(n, totpar, totimpar);
