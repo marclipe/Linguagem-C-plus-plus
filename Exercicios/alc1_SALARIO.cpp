@@ -19,7 +19,6 @@ int main()
     controle();
 }
 
-
 int lerSe()
 {
     int t = 0, res = 0;
@@ -56,7 +55,6 @@ int lerSe()
     }
     return res;
 }
-
 
 double lerSa()
 {
@@ -97,7 +95,7 @@ void controle()
     double salario, saldoM = 0, saldoH = 0;
     double meM, meH;
 
-    //MENU 
+    //MENU
 
     while (true)
     {
