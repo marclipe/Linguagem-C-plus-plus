@@ -13,7 +13,7 @@ int lern()
 
 void exibir(int n, int totpar, int totimpar)
 {
-    cout << "\nNúmero: " << n;
+    cout << "\nNumero: " << n;
     cout << "\nTotal de pares: " << totpar;
     cout << "\nTotal de impares: " << totimpar;
     system("pause");
