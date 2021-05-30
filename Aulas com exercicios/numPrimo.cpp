@@ -5,16 +5,17 @@ using namespace std;
 
 int lerNum(string inf)
 {    ​​​​​​​​
-    int n;
+    int num;
     system("clear");
     cout << "\nDigite o valor inteiro positivo de " << inf << ":";
-    cin >> n;
-    return n;
+    cin >> num;
+    return num;
 }
 ​​​​​​​​
 // 4 = 1 * 2 * 3 * 4 = 24
 int fatorial(int numero)
 {
+    
     ​​​​​​​​
     if (numero == 0 || numero == 1)
         return 1;
