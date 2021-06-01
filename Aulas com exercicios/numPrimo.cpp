@@ -1,4 +1,4 @@
-#include "iostream"
+/*#include "iostream"
 #include "cstdlib"
 #include "string"
 using namespace std;
@@ -86,7 +86,7 @@ void controle_achaPar()
 
     system("sleep 8");
 }
-​​​​​​​​
+​​​​​​​
 
 bool ehPrimo(int num)
 {
@@ -96,6 +96,8 @@ bool ehPrimo(int num)
  entre 1 e ele mesmo
  5 i= 1 2 3 4 5 
  */
+
+​/*
     cout << "\n*** Descobrindo um número Primo ***";
     int contdiv = 0; // contar divisores entre 1 e num
     for (int i = 1; i <= num; i += 1)
@@ -140,3 +142,4 @@ int main()
     controle_primo();
 }
 ​​​​​​​​
+*/

@@ -18,7 +18,6 @@ int main()
     switch (tecla)
     {
     case 1:
-        system("clear");
         cout << "Digite dois valores: ";
         cin >> x;
         cin >> y;
