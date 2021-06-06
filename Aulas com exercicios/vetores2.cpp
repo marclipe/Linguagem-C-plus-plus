@@ -1,4 +1,4 @@
-#include <iostream> //Vetores 05/06/2021
+#include <iostream> //Vet 05/06/2021
 #include <cstdlib>
 #include <math.h>
 #include <string>
@@ -12,6 +12,9 @@ int x[] = {1, 0, -1};
 
 int main()
 {
+    /*cout << sizeof (int) << endl; 
+    cout << sizeof ( x ) << endl;
+    cout << sizeof (x)/ sizeof(int);*/
 
     int n = sizeof(x) / sizeof(int);
 
@@ -20,7 +23,8 @@ int main()
     for (int i = 0; i <= n - 1; i++)
     { //           x1**2   +  x2
         aux = pow(x[i], 2) + x[i];
-        cout << aux << endl;
+        
+        cout << "Valor de x[" << i << "]=" << x[i] << aux << endl;
     }
 
     return 0;
