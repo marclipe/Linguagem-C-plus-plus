@@ -28,7 +28,7 @@ void inserir(string name, string situ, int ida)
 
 void mostrar()
 {
-    system("clear");
+    system("cls");
     for (int i = 0; i <= linha; i++)
     {
         cout << nome[i] << " -- " << sit[i] << " -- " << idade[i] << endl;
