@@ -8,12 +8,6 @@ using namespace std;
 int linha = -1;
 int const n = 5;
 
-/*Faça um código contendo vetores não explícitos, para armazenar o nome, a
-situação do empregado que poderá ser: “efetivo” ou “estagiário” e a idade. A leitura
-deverá ser feita através de um menu de controle, coloque também uma opção para
-exibir somente os nomes dos estagiários e outra opção para exibir somente o nome
-dos efetivos, finalmente uma opção para exibir os funcionários menores de idade.*/
-
 string nome[n];
 string sit[n];
 int idade[n];
